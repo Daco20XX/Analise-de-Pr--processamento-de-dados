@@ -1,10 +1,13 @@
 📊 Pré-Análise de Dados: Classificação de Risco de Colisão
+
 Este repositório contém a etapa de análise exploratória de dados (EDA), extração de características e redução de dimensionalidade com PCA, com base em simulações de sensores ultrassônico de distância. Esta análise servirá como base para treinamentos futuros de modelos preditivos em outro repositório.
 
 🔍 Objetivo
+
 Investigar o comportamento das leituras de sensores, entender padrões de risco de colisão e preparar os dados com características relevantes para serem utilizados posteriormente em modelos de classificação.
 
 📌 Funcionalidades
+
 Geração e visualização de estatísticas descritivas;
 
 Gráficos de distribuição e separação de classes;
@@ -16,6 +19,7 @@ Extração de estatísticas por janela (média, desvio, etc.);
 Redução de dimensionalidade via PCA.
 
 🛠 Tecnologias Utilizadas
+
 Python 3.10
 
 NumPy
@@ -29,6 +33,7 @@ Seaborn
 Scikit-learn
 
 ▶️ Como Executar
+
 Clone o repositório:
 
 bash
