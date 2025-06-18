@@ -74,25 +74,29 @@ python analise_eda.py
 
 Mostra a distribuição das distâncias medidas pelos sensores, com destaque para o **limite de colisão (100 cm)**.
 
-![Histograma](imgs/histograma_distancia.png)
+![image](https://github.com/user-attachments/assets/9fe22983-731b-411b-97e9-c63abefac250)
+
 
 #### Estatísticas Descritivas
 
 Resumo estatístico dos dados coletados, revelando que 101 amostras indicam risco de colisão (distância < 100 cm).
 
-![Estatísticas](imgs/resumo_estatistico.png)
+![image](https://github.com/user-attachments/assets/14251acf-6edc-4ce3-97cb-2a79b39ec0cd)
+
 
 #### Distribuição por Classe
 
 Gráfico de barras mostrando a proporção de situações com e sem risco.
 
-![Distribuição](imgs/distribuicao_risco.png)
+![image](https://github.com/user-attachments/assets/1f9f4e04-57a4-4674-8dd2-87237bd63162)
+
 
 #### Boxplot das Distâncias por Classe
 
 A distância média das situações “com risco” é visivelmente menor e mais concentrada.
 
-![Boxplot](imgs/boxplot_distancias.png)
+![image](https://github.com/user-attachments/assets/a1d28323-c34d-45ce-bd62-785c62f5cd98)
+
 
 ---
 
@@ -100,7 +104,8 @@ A distância média das situações “com risco” é visivelmente menor e mais
 
 A Análise de Componentes Principais (PCA) foi utilizada para reduzir a dimensionalidade e facilitar a visualização da separação entre classes.
 
-![PCA](imgs/pca_projecao.png)
+![image](https://github.com/user-attachments/assets/ceae4205-5de3-48fc-b57d-b81288986923)
+
 
 Apesar de a separação linear ser sutil, é possível observar aglomerados com e sem risco.
 
@@ -124,18 +129,21 @@ Essas características foram escolhidas por resumirem o comportamento da distân
 
 - Média da distância por janela:
 
-  ![Média](imgs/media_janela.png)
+  ![image](https://github.com/user-attachments/assets/4d65d6c5-fa2e-4f41-85f1-5d7486735b8f)
+
 
 - Desvio padrão da distância:
 
-  ![Desvio](imgs/desvio_janela.png)
+  ![image](https://github.com/user-attachments/assets/c3496f49-c2ec-40e4-8825-491713965b7f)
+
 
 - Exemplo da tabela com as features extraídas:
 
-  ![Tabela Features](imgs/features_extraidas.png)
+  ![image](https://github.com/user-attachments/assets/251a57d3-4458-4b50-9948-4c8e9e2735c3)
+
 
 ---
 
 ## 📎 Observações Finais
 
-Este repositório trata exclusivamente da pré-análise de dados. Os modelos de classificação (MLP e MLP-RAM) serão desenvolvidos e avaliados em outro repositório, utilizando os dados e features preparados aqui.
+Este repositório trata exclusivamente da pré-análise de dados. Os modelos de classificação (MLP e MLP-RAM) serão desenvolvidos e avaliados em outro repositório, utilizando os dados analisados aqui.
