@@ -40,28 +40,9 @@ git clone https://github.com/Daco20XX/Analise-de-Pr--processamento-de-dados.git
 cd Analise-de-Pr--processamento-de-dados
 ```
 
-2. Instale as dependências:
+2. Execute o script de cada etapa:
 ```bash
-pip install -r requirements.txt
-```
-
-3. Execute o script de análise:
-```bash
-python analise_eda.py
-```
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-📦 Analise-de-Pr--processamento-de-dados
-├── 📜 analise_eda.py
-├── 📁 dados
-│   └── simulated_data.csv
-├── 📁 imgs
-│   └── (imagens geradas pela análise)
-└── 📄 README.md
+python nome_da_etapa.py
 ```
 
 ---
