@@ -25,7 +25,7 @@ df['PCA_1'] = X_pca
 # Plotar gráfico com a projeção PCA
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x='PCA_1', y=[0]*len(df), hue='risco_colisao', data=df, palette='Set1', alpha=0.7)
-plt.title('Projeção dos Dados após PCA (1D)')
+plt.title('Projeção dos Dados após PCA (2D)')
 plt.xlabel('Componente Principal 1')
 plt.yticks([])  # Remove eixo y por ser 1D
 plt.legend(title='Risco de Colisão', labels=['Sem Risco (0)', 'Com Risco (1)'])
