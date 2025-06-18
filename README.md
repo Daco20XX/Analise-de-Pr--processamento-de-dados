@@ -66,18 +66,22 @@ Mostra a distribuição das distâncias medidas pelos sensores, com destaque par
 
 Estatísticas Descritivas
 Resumo estatístico dos dados coletados, revelando que 101 amostras indicam risco de colisão (distância < 100 cm).
+![image](https://github.com/user-attachments/assets/791d4408-2184-4604-a7c6-d2bd4b67a54b)
 
 
 Distribuição por Classe
 Gráfico de barras mostrando a proporção de situações com e sem risco.
+![image](https://github.com/user-attachments/assets/a7ea7582-87a1-4cb6-a233-93039555fb7c)
 
 
 Boxplot das Distâncias por Classe
 A distância média das situações “com risco” é visivelmente menor e mais concentrada.
+![image](https://github.com/user-attachments/assets/cbe304ec-4c49-48dd-bc67-5442e355c5d1)
 
 
 2. Aplicação do PCA
 A Análise de Componentes Principais (PCA) foi utilizada para reduzir a dimensionalidade e facilitar a visualização da separação entre classes.
+![image](https://github.com/user-attachments/assets/becf6d61-3b91-4869-b766-f76734b1e6d7)
 
 
 Apesar de a separação linear ser sutil, é possível observar aglomerados com e sem risco.
@@ -96,13 +100,16 @@ Essas características foram escolhidas por resumirem o comportamento da distân
 
 Exemplos gráficos:
 Média da distância por janela:
+![image](https://github.com/user-attachments/assets/b9cebad6-9cf4-41db-8990-2ee7f8f342fb)
 
 
 Desvio padrão da distância:
+![image](https://github.com/user-attachments/assets/d959e712-172c-498f-ab6c-33b07bf0fdf4)
 
 
 Exemplo da tabela com as features extraídas:
+![image](https://github.com/user-attachments/assets/9b2e04fe-b698-4a33-be91-8e26e0ac6d7d)
 
 
 📎 Observações Finais
-Este repositório trata exclusivamente da pré-análise de dados. Os modelos de classificação (MLP e MLP-RAM) serão desenvolvidos e avaliados em outro repositório, utilizando os dados e features preparados aqui.
+Este repositório trata exclusivamente da pré-análise de dados. Os modelos de classificação (MLP e MLP-RAM) serão desenvolvidos e avaliados em outro repositório, utilizando os dados analisados aqui.
