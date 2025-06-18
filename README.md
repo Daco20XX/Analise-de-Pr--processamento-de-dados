@@ -63,28 +63,35 @@ Editar
 │   └── simulated_data.csv
 └── 📄 README.md
 📊 Relatório Técnico
+
 1. Gráficos de EDA
+   
 Histograma da Distância
+
 Mostra a distribuição das distâncias medidas pelos sensores, com destaque para o limite de colisão (100 cm).
 ![image](https://github.com/user-attachments/assets/1c584ca0-46aa-4f41-8dc1-3a5a2e1b7554)
 
 
 Estatísticas Descritivas
+
 Resumo estatístico dos dados coletados, revelando que 101 amostras indicam risco de colisão (distância < 100 cm).
 ![image](https://github.com/user-attachments/assets/791d4408-2184-4604-a7c6-d2bd4b67a54b)
 
 
 Distribuição por Classe
+
 Gráfico de barras mostrando a proporção de situações com e sem risco.
 ![image](https://github.com/user-attachments/assets/a7ea7582-87a1-4cb6-a233-93039555fb7c)
 
 
 Boxplot das Distâncias por Classe
+
 A distância média das situações “com risco” é visivelmente menor e mais concentrada.
 ![image](https://github.com/user-attachments/assets/cbe304ec-4c49-48dd-bc67-5442e355c5d1)
 
 
 2. Aplicação do PCA
+   
 A Análise de Componentes Principais (PCA) foi utilizada para reduzir a dimensionalidade e facilitar a visualização da separação entre classes.
 ![image](https://github.com/user-attachments/assets/becf6d61-3b91-4869-b766-f76734b1e6d7)
 
@@ -92,6 +99,7 @@ A Análise de Componentes Principais (PCA) foi utilizada para reduzir a dimensio
 Apesar de a separação linear ser sutil, é possível observar aglomerados com e sem risco.
 
 3. Extração de Características
+   
 Com o objetivo de representar melhor o contexto de risco em janelas de tempo, as seguintes features foram extraídas a cada 10 leituras:
 
 Feature	Descrição
