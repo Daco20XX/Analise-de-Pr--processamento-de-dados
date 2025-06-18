@@ -1,0 +1,36 @@
+import pandas as pd
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Carregar os dados
+df = pd.read_csv('distancia_colisao.csv')
+
+# Selecionar as features numéricas
+X = df[['distancia_cm']]  # Apenas uma feature útil, além do rótulo
+y = df['risco_colisao']
+
+# Padronizar os dados
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Aplicar PCA (mesmo com 1 dimensão, faremos para cumprir o requisito)
+pca = PCA(n_components=1)
+X_pca = pca.fit_transform(X_scaled)
+
+# Adicionar a componente principal ao DataFrame
+df['PCA_1'] = X_pca
+
+# Plotar gráfico com a projeção PCA
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x='PCA_1', y=[0]*len(df), hue='risco_colisao', data=df, palette='Set1', alpha=0.7)
+plt.title('Projeção dos Dados após PCA (1D)')
+plt.xlabel('Componente Principal 1')
+plt.yticks([])  # Remove eixo y por ser 1D
+plt.legend(title='Risco de Colisão', labels=['Sem Risco (0)', 'Com Risco (1)'])
+plt.tight_layout()
+plt.show()
+
+# Mostrar variância explicada
+print(f"Variância explicada pelo PCA: {pca.explained_variance_ratio_[0]:.4f}")
